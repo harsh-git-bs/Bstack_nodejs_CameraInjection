@@ -7,8 +7,8 @@ desiredCaps = {
     process.env.BROWSERSTACK_USERNAME || "BROWSERSTACK_USERNAME",
   "browserstack.key":
     process.env.BROWSERSTACK_ACCESS_KEY || "BROWSERSTACK_ACCESS_KEY",
-  build: "Node Android",
-  name: "single_test",
+  build: "Camera Injection Demo",
+  name: "Android camera Injection Test",
   device: "Samsung Galaxy S10",
   app: "bs://bfc5c2fb5961ffaae75e9db4c29a2374e6172108",
   "browserstack.debug": "true",

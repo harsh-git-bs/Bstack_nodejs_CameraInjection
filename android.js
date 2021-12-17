@@ -54,6 +54,11 @@ driver
   .then(function (searchElement) {
     return searchElement.click();
   })
+  .then(function () {
+    return driver.execute(
+      'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed","reason": "Image captured Successfully!!"}}'
+    );
+  })
   .fin(function () {
     return driver.quit();
   })

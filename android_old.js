@@ -34,6 +34,26 @@ driver
   .then(function (searchElement) {
     return searchElement.click();
   })
+  // .then(function () {
+  //   return driver.waitForElementById(
+  //     "com.bsstag.cameraimage:id/button",
+  //     asserters.isDisplayed && asserters.isEnabled,
+  //     30000
+  //   );
+  // })
+  // .then(function (searchElement) {
+  //   return searchElement.click();
+  // })
+  // .then(function () {
+  //   return driver.waitForElementById(
+  //     "com.android.permissioncontroller:id/permission_allow_foreground_only_button",
+  //     asserters.isDisplayed && asserters.isEnabled,
+  //     30000
+  //   );
+  // })
+  // .then(function (searchElement) {
+  //   return searchElement.click();
+  // })
   .then(function () {
     return driver.waitForElementByXPath(
       '(//GLButton[@content-desc="NONE"])[2]',
@@ -44,6 +64,26 @@ driver
   .then(function (searchElement) {
     return searchElement.click();
   })
+  // .then(function () {
+  //   return driver.waitForElementByAccessibilityId(
+  //     "Take photo",
+  //     asserters.isDisplayed && asserters.isEnabled,
+  //     30000
+  //   );
+  // })
+  // .then(function (searchElement) {
+  //   return searchElement.click();
+  // })
+  // .then(function () {
+  //   return driver.waitForElementByAccessibilityId(
+  //     "Done",
+  //     asserters.isDisplayed && asserters.isEnabled,
+  //     30000
+  //   );
+  // })
+  // .then(function (searchElement) {
+  //   return searchElement.click();
+  // })
   .then(function () {
     return driver.waitForElementById(
       "com.sec.android.app.camera:id/okay",
@@ -54,6 +94,15 @@ driver
   .then(function (searchElement) {
     return searchElement.click();
   })
+  //   .then(function (searchInput) {
+  //     return searchInput.sendKeys("BrowserStack");
+  //   })
+  //   .then(function () {
+  //     return driver.elementsByClassName("android.widget.TextView");
+  //   })
+  //   .then(function (search_results) {
+  //     assert(search_results.length > 0);
+  //   })
   .fin(function () {
     return driver.quit();
   })
